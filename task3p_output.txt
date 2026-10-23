@@ -1,0 +1,9 @@
+N: 2000000
+Seed: 2301032840
+Number of threads: 4
+Serial Time (ms): 13.459
+Parallel Time (ms): 20.308
+Speedup: 0.6627x
+Verification Status: PASS
+Serial final sum: 11000841
+Parallel final sum: 11000841
