@@ -1,0 +1,7 @@
+Task 2: Pseudo-Random Generator State Bottleneck
+Student ID: 230103284
+Sample points: 40000000
+Threads: 4
+Shared PRNG: Computed pi = 3,1417060000, absolute error = 0,0001133464, wall time = 2160,726 ms
+Independent PRNG: Computed pi = 3,1413562000, absolute error = 0,0002364536, wall time = 115,944 ms
+Speedup (shared time / independent time): 18,6359x
