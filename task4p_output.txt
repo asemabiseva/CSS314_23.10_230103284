@@ -1,0 +1,12 @@
+TASK 4: IPC Serialization vs Shared Memory
+Repeats per size: 3
+Times include data transfer and receiver access.
+Shared memory includes allocation and copying into shared memory.
+
+N | IPC (ms) | Shared Memory (ms) | Faster Path
+100000 | 2.850 | 1.510 | Shared Memory
+1000000 | 24.974 | 9.369 | Shared Memory
+10000000 | 190.587 | 82.115 | Shared Memory
+
+IPC uses Pickle serialization through a multiprocessing pipe.
+Shared memory avoids sending the full array through the pipe, but includes allocation and a source-to-shared-memory copy.
