@@ -1,0 +1,17 @@
+TASK 5: Thread Oversubscription Threshold
+CPU cores reported by OS: 12
+Number of tasks: 10000
+Hashes per task: 500
+Runs per pool size: 3
+
+Pool Size | Execution Time (ms) | Speedup | Status
+         1 |            8497.116 |   1.000x | BASELINE
+         6 |            8517.111 |   0.998x | WORSENING START
+        12 |            8637.190 |   0.984x | SLOWER
+        24 |            9065.720 |   0.937x | SLOWER
+        48 |            8763.959 |   0.970x | NO CLEAR CHANGE
+       192 |            9264.619 |   0.917x | SLOWER
+       256 |            9108.592 |   0.933x | NO CLEAR CHANGE
+
+First observed worsening: pool size 6 threads.
+Note: timings include thread-pool creation and shutdown. The first worsening point is an observed benchmark result, not proof that OS context switching alone caused the slowdown.
