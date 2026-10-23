@@ -1,0 +1,11 @@
+Row-Major vs. Column-Major Parallel Cache Traversal
+Student ID: 230103284
+Logical core count: 12
+Physical cores / worker processes: 6 / 6
+Matrix: 8000 x 8000 float64
+Mode A (Row-Major) runtime: 824.711 ms
+Mode B (Column-Major / Strided) runtime: 1100.137 ms
+Cache penalty factor (Mode B / Mode A): 1.3340x
+Row-major sum: 32000445.135135587305
+Column-major sum: 32000445.135135617107
+Sum verification (close): PASS
